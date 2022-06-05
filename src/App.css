@@ -1,38 +1,79 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  font-size: clamp(0.9rem, 1vw + 1.3rem, 2.6rem);
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-group {
+  max-width: 20.625rem;
+  margin-bottom: 1.75rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.username-input {
+  display: block;
+  width: 100%;
+  padding: 1rem 0.75rem;
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 1rem;
+  background-color: #f7f7fa;
+}
+
+.feedback-message {
+  display: flex;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.feedback-message svg {
+  vertical-align: top;
+  flex-shrink: 0;
+}
+
+.btn {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #000;
+  border: none;
+  border: 1px solid currentColor;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: #f2f2f2;
+  color: #676767;
+}
+
+.btn[aria-invalid='true'] {
+  border: 1px solid #dd0e0e;
+}
+
+.btn[aria-invalid='false'] {
+  border: 1px solid #068404;
 }
