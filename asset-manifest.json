@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/username-validation-demo/static/css/main.f289d0f8.css",
+    "main.js": "/username-validation-demo/static/js/main.82c20919.js",
+    "index.html": "/username-validation-demo/index.html",
+    "main.f289d0f8.css.map": "/username-validation-demo/static/css/main.f289d0f8.css.map",
+    "main.82c20919.js.map": "/username-validation-demo/static/js/main.82c20919.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f289d0f8.css",
+    "static/js/main.82c20919.js"
+  ]
+}
